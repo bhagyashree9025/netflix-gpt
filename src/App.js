@@ -1,8 +1,14 @@
-import logo from "./logo.svg";
+import Body from "./Components/Body";
 import "./App.css";
+import appStore from "./utils/appStore";
+import { Provider } from "react-redux";
 
 function App() {
-  return <div className="font-bold text-3xl">Hello</div>;
+  return (
+    <Provider store={appStore}>
+      <Body></Body>
+    </Provider>
+  );
 }
 
 export default App;
