@@ -1,5 +1,4 @@
 export const checkValidateData = (email, password) => {
-  console.log("CheckData", email, password);
   const isEmailValid =
     /^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/.test(email);
   const isPasswordValid =
